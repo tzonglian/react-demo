@@ -2,8 +2,18 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+const kf = keyframes`
+33% {
+  transform: scale(.6);
+}
+66% {
+  transform: scale(1.4);
+}
+`
+
 const StyledCharacter = styled.article`
     width: 100%;
+    animation: ${kf} 2s;
     .charaPic{
         background-color: rgba(0,255,0,.5);
     }

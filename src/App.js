@@ -24,10 +24,20 @@ const App = () => {
       })
   }, [])
 
+  const kf = keyframes`
+  33% {
+    transform: scale(.6);
+  }
+  66% {
+    transform: scale(1.4);
+  }
+  `
+
   const StyledHeader = styled.h1`
     color: #443e3e;
     text-shadow: 1px 1px 5px #fff;
     padding: 5%;
+    animation: ${kf} 2s;
   `
 
   const StyledCharacters = styled.section`
