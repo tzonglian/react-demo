@@ -32,22 +32,25 @@ const App = () => {
       <h1 className="Header">Characters</h1>
       <section className='characters'>
 
-        {charaData.map(ch =>
-          <div className='character' key={ch.id}>
+        {charaData.map(ch => {
+          return <Character key={ch.id} info={ch} />
+          })
+        }
+
+
+          {/* <div className='character' key={ch.id}>
             {ch.name}
+
             {/* <article className='characterInfo'>
               Name: `${currentChara.name}`
             </article> */}
-          </div>
-        )}
+          {/*</div> */}
 
       </section>
 
-      {/* {
-        charaData.map(ch => {
-          return <Character key={ch.id} info={ch} />
-        })
-      } */}
+
+
+
     </div>
   );
 }
