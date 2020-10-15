@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a User Interface library for Javascript made by Facebook.  It is made of smaller reusable pieces of code called "components", which can be set to different states, stylized individually, etc.  It gives flexibility to render each component separately/individually/uniquely, instead of all in one large framework.
+
 1. Describe component state.
+
+A component is a smaller piece of code, rendered separately.  For example, parent components are rendered separately from each of its child components.
 
 1. Describe props.
 
+Props is short for properties, which is used to pass properties (such as variables) from parent component to child component.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+When some code has finished executing, it may leave behind "side effects" if it hasn't been cleaned up.  For example, if a component calls an addEventListener, and the component closes, the event listener remains until it is "cleaned up" (with functions such as removeEventListener).
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
